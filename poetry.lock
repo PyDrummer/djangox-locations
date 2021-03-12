@@ -167,6 +167,14 @@ pycodestyle = ">=2.6.0a1,<2.7.0"
 pyflakes = ">=2.2.0,<2.3.0"
 
 [[package]]
+name = "fontawesome-free"
+version = "5.15.2"
+description = "Font Awesome Free"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "idna"
 version = "2.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -375,7 +383,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "5a18b8496d9d31d7b171b677bf4cf70d4b00ae7926165aea78c8a55f224bba4b"
+content-hash = "07d2e28c99e6d1a4afd375eaa910be0692c3d32ed66828da1e08853bfac36a28"
 
 [metadata.files]
 appdirs = [
@@ -476,6 +484,9 @@ django-debug-toolbar = [
 flake8 = [
     {file = "flake8-3.8.4-py2.py3-none-any.whl", hash = "sha256:749dbbd6bfd0cf1318af27bf97a14e28e5ff548ef8e5b1566ccfb25a11e7c839"},
     {file = "flake8-3.8.4.tar.gz", hash = "sha256:aadae8761ec651813c24be05c6f7b4680857ef6afaae4651a4eccaef97ce6c3b"},
+]
+fontawesome-free = [
+    {file = "fontawesome_free-5.15.2-py3-none-any.whl", hash = "sha256:e910e6a9fb98987a66982f80de6673c06255498f6473038c3b139f7962bb6317"},
 ]
 idna = [
     {file = "idna-2.10-py2.py3-none-any.whl", hash = "sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"},

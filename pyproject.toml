@@ -11,6 +11,7 @@ django-allauth = "^0.44.0"
 django-crispy-forms = "^1.11.1"
 django-debug-toolbar = "^3.2"
 whitenoise = "^5.2.0"
+fontawesome-free = "^5.15.2"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"

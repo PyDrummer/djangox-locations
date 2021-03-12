@@ -13,7 +13,7 @@ class LocationListView(ListView):
 class LocationCreateView(CreateView):
   template_name = "locations/locations-create.html"
   model = Location
-  fields = []
+  fields = ['location', 'description', 'name']
   
 
 class LocationDetailView(DetailView):
@@ -23,7 +23,7 @@ class LocationDetailView(DetailView):
 class LocationUpdateView(UpdateView):
   template_name = "locations/locations-update.html"
   model = Location
-  fields = []
+  fields = ['location', 'description', 'name']
 
 class LocationDeleteView(DeleteView):
   template_name = "locations/locations-delete.html"

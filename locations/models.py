@@ -4,9 +4,9 @@ from django.contrib.auth import get_user_model
 # Create your models here.
  
 class Location(models.Model):
-    name = models.CharField(max_length=64)
+    location = models.CharField(max_length=64, default='Location')
     description = models.TextField(default='Type the description here')
-    key = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    name = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
  
     def __str__(self):
         return self.name
