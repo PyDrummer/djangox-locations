@@ -1,5 +1,13 @@
 {% extends '_base.html'%}
 {% block content%}
-<h1>Content coming soon</h1>
-<h2>List</h2>
-{% endblock content%}
+    <h1 class="requiredField create_title">Locations List</h1>
+    <div class='locations'>
+        <h2 class="requiredField">For more details click on any of the following:</h2>
+        <ul>
+        {% for place in object_list %}
+            <li><a class='details' href="{% url 'locations_details' place.pk %}">{{ place.location }}</a></li>
+        {% endfor%}
+        </ul>
+        <p class="opener"><a class='add' href="{% url 'locations_create' %}">Add a new one!</a></p>
+    </div>
+{% endblock content %}

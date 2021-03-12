@@ -1,5 +1,10 @@
 {% extends '_base.html'%}
 {% block content%}
-<h1>Content coming soon</h1>
-<h2>Delete</h2>
+    <h1 class="requiredField create_title">Delete {{location.location}}?</h1>
+    <form id='delete' action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p class="requiredField" >Do you really want to delete {{location.location}} ?</p>
+        <input class='update_delete' type="submit" value="YES">
+    </form>
 {% endblock content%}
