@@ -1,10 +1,10 @@
 {% extends '_base.html' %}
-<!-- {% load crispy_forms_tags %} -->
+{% load crispy_forms_tags %}
 {% block content %}
-<h1> Create</h1>
+<h1 class="requiredField" id='create_title' >Add to your saved locations:</h1>
     <form method="POST" action='' >
         {% csrf_token %}
-        <!-- {{ form|crispy}} -->
+        {{ form|crispy}}
         <button type='submit'>Save</button>
     </form>
 {% endblock content %}

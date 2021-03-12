@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'crispy_forms',
     'debug_toolbar',
+    'fontawesome-free',
 
     # Local
     'accounts',
