@@ -1,5 +1,10 @@
 {% extends '_base.html'%}
+{% load crispy_forms_tags %}
 {% block content%}
-<h1>Content coming soon</h1>
-<h2>Update</h2>
+    <h1 class="requiredField create_title">Update {{location.location}}?</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form|crispy}}
+        <input type="submit" value="Save">
+    </form>
 {% endblock content%}

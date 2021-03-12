@@ -1,5 +1,8 @@
 {% extends '_base.html'%}
 {% block content%}
-<h1>Content coming soon</h1>
-<h2>Details</h2>
-{% endblock content%}
+    <h1 class="requiredField create_title">{{ location.location }}</h1>
+    <p class='details'>Description: {{ location.description }}</p>
+    <p class='details'>Who added it?: {{ location.name }}</p>
+    <a class='update_delete' href="{% url 'locations_update' location.pk %}">Update Location</a>
+    <a class='update_delete' href="{% url 'locations_delete' location.pk %}">Delete Location</a>
+{% endblock content %}

@@ -6,7 +6,9 @@
 {% block content %}
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <img src="{% static 'images/banner.jpg' %}" class="img-fluid" alt="Locations logo"/>
-  <p class="lead opener">Like a location?</p>
-  <p class="opener"><a class='add' href="{% url 'locations_create' %}">Add one here!</a></p>
+  <p class="lead opener">Would you like to store a location you like?</p>
+  <p class="opener"><a class='add' href="{% url 'locations_create' %}">Click here to add one!</a></p>
+  <p class="opener">Or</p>
+  <p class="opener"><a class='add' href="{% url 'locations_list' %}">See the locations already added!</a></p>
 </div>
 {% endblock content %}
